@@ -1,5 +1,16 @@
 <!doctype html>
 <html lang="en">
+
+<style>
+    .main {
+        width: '100%';
+        margin: 0px;
+    }
+    .submain {
+        width: '85%';
+        margin: '1rem auto';
+    }
+</style>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -9,11 +20,11 @@
     </head>
 
     <body>
-        <div style = {{ width: '100%', margin: '0'}}>
+        <div class="main">
 
             {/* Main Page */}
 
-            <div style = {{ width: '85%', margin: '1rem auto'}}>
+            <div class="submain">
 
                 <h2>Movie by latest</h2>
                 <hr />
@@ -22,7 +33,7 @@
 
             </div>
 
-            <div style = {{ display: 'flex', justifyContent: 'center'}} >
+            <div>
                 <button>Load More</button>
             </div>
 
