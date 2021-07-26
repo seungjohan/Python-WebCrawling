@@ -1,0 +1,5 @@
+# id를 이용해 바로 찾기
+//*[@id="account"]/a
+
+# 전체경로
+/html/body/div[2]/div[3]/div[3]/div/div[2]/a
