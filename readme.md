@@ -26,4 +26,4 @@ study that conducts related projects and reviews each other based on the Vanilla
 
 ## Reference
 |About|link|whatIlearned|
-|야놀자 범법행위|https://zdnet.co.kr/view/?no=20200211153634||
+|야놀자 범법행위|[link](https://zdnet.co.kr/view/?no=20200211153634|)|
