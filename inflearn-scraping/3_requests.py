@@ -12,7 +12,10 @@ print("ResponseCode :", res.status_code) # 200이면 정상
 # else:
 #     print("It has some problems. [ErrorCode ", res.status_code, "]")
 
+# == 같은 의미
+# 스크래핑을 할 때 올바로 코드를 가져왔으면 문제가 없고, 문제가 있으면 에러를 내는 것
 res.raise_for_status()
+
 
 print(len(res.text))
 print(res.text)
