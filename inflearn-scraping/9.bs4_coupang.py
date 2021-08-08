@@ -21,7 +21,7 @@ items = soup.find_all("li", attrs={"class": re.compile("^search-product")})
 
 for item in items:
 
-    # 광고 제품은 제외한다.
+    # 광고 태그가 붙은 광고제품은 제외한다.
     ad_badge = item.find_all("span", attrs={"class":"ad-badge-text"})
     if ad_badge:
         print("    <Except the ad badge>")
