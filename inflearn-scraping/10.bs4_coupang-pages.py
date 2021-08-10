@@ -48,9 +48,12 @@ for i in range(1, 6):
             # print("    <Except the badge which has no total rate value>")
             continue
 
+        link = item.find("a", attrs={"class":"search-product-link"})["href"]
+
         if float(rate) >= 4.5 and int(rate_count) >= 1000 :
             # print(name, price, rate, rate_count)
             print(f"Item: {name}")
             print(f"Price: {price}")
             print(f"Score: {rate}, (Number : {rate_count})")
+            print("Going To : {}".format("https://www.coupang.com" + link))
             print("-"*100) # draw line
