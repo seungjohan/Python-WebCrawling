@@ -7,6 +7,16 @@ res.raise_for_status
 
 soup = BeautifulSoup(res.text, "lxml")
 
+genres = soup.find_all("div", attrs={"class":"znKVS"})
+
+# for i in genres:
+#     genres_list[i] = genres
+#     print("genre_{}".format(genres_list[i]))
+for idx, genre in enumerate(genres):
+    genre_list = genre.get_text()
+    print(genre)
+
+
 images=soup.find_all("g-img", attrs={"class": "BA0A6c"})
 
 
