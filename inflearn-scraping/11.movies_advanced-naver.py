@@ -15,3 +15,6 @@ for year in range(2012, 2021) :
     for idx, image in enumerate(images):
         image_url = image["src"]
         print(image["src"])
+
+        if image_url.startswith("//"):
+            image_url = "https" + image_url
